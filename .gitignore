@@ -1,0 +1,15 @@
+# Obsidian: editor state that changes constantly
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/cache
+.trash/
+
+# Editor and OS junk
+*~
+*.swp
+.DS_Store
+Thumbs.db
+
+# Word temp/lock files
+~$*
+.~lock.*#
