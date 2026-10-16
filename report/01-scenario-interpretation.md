@@ -14,23 +14,23 @@
 8. Any replacement for the journey must meet the original passenger and vehicle requirements.
 9. Drivers receive information on journeys and passengers through printed schedules, as not all drivers use email or mobile apps.
 10. If a passenger isn't ready or doesn't appear, the driver may decide on waiting time or who to telephone.
-11. The may passenger receive the final arrangements, though whether this covers the return is unknown.
+11. The passenger may receive the final arrangements, though whether this covers the return is unknown.
 12. Drivers complete records of collection, arrival, return and any unsuccessful journey.
 
 ## Problems and Consequences
 
-| ID   | Problem                                                                           | Evidence                                                                                                          | Consequence                                                                                |
-| ---- | --------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------ |
-| P-01 | Printed schedules can be incorrect or inaccurate if changes were made.            | "Printed schedules may become outdated after changes, and drivers do not all use email or mobile applications."   | Mismatched Schedules. <br>**Affects: Drivers**                                             |
-| P-02 | Return journey not being confirmed.                                               | “I need to know whether the return journey is confirmed, not only how I am getting there.”                        | Passenger left stranded.<br>**Affects: Passenger**                                         |
-| P-03 | Passenger may not receive final arrangements.                                     | Requests are sometimes submitted by relatives or community workers without confirming who should receive updates. | Passengers misinformed about pickup times.<br>**Affects: Passengers**                      |
-| P-04 | No way to tell whether a driver declined, was unavailable or was never contacted. | “We cannot tell whether a driver declined, was unavailable or was never contacted.”                               | Can leave mismatched schedules, and expectations <br>**Affects: Coordinators**             |
-| P-05 | Vehicles can't be used when no authorised driver is free.                         | “The vehicle can be free while no authorised driver is available.”                                                | Shortage on drivers may slow business.<br>**Affects: Coordinators**                        |
-| P-06 | Drivers decide waiting time.                                                      | Drivers currently decide how long to wait and whom to telephone.                                                  | Later expected arrivals or missed travel for passenger.<br>**Affects: Service, Passenger** |
-| P-07 | No consistent records of incomplete journeys                                      | "Reasons for incomplete journeys are not recorded consistently."                                                  | May leave inaccuracies.<br>**Affects: Coordinators**                                       |
-| P-08 | Documentation skipped if a familiar driver is allocated.                          | "Staff occasionally allocate a familiar driver before checking whether required documentation remains current."   | Can leave inaccuracies with accessibility needs.<br>**Affects: Drivers**                   |
-| P-09 | Staff disagree on sharing a journey with other passengers.                        | "Staff disagree about whether sharing should be assumed or explicitly agreed each time."                          | Inconsistent decision making on journeys.<br>**Affects: Passengers, Coordinators**         |
-| P-10 | Staff disagree on handling sensitive details about passengers.                    | "Staff are unsure how to handle sensitive details included unnecessarily by a referrer."                          | Can make the passengers feel vulnerable.<br>**Affects: Passengers**                        |
+| ID   | Problem                                                                           | Evidence                                                                                                          | Consequence                                                                                     |
+| ---- | --------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
+| P-01 | Printed schedules can be incorrect or inaccurate if changes were made.            | "Printed schedules may become outdated after changes, and drivers do not all use email or mobile applications."   | Mismatched Schedules. <br>**Affects: Drivers**                                                  |
+| P-02 | Return journey not being confirmed.                                               | “I need to know whether the return journey is confirmed, not only how I am getting there.”                        | Passenger left stranded.<br>**Affects: Passenger**                                              |
+| P-03 | Passenger may not receive final arrangements.                                     | Requests are sometimes submitted by relatives or community workers without confirming who should receive updates. | Passengers misinformed about pickup times.<br>**Affects: Passengers**                           |
+| P-04 | No way to tell whether a driver declined, was unavailable or was never contacted. | “We cannot tell whether a driver declined, was unavailable or was never contacted.”                               | Can leave mismatched schedules, and expectations <br>**Affects: Coordinators**                  |
+| P-06 | Drivers decide waiting time.                                                      | "Drivers currently decide how long to wait and whom to telephone."                                                | Later expected arrivals or missed travel for passenger.<br>**Affects: Coordinators, Passenger** |
+| P-07 | No consistent records of incomplete journeys                                      | "Reasons for incomplete journeys are not recorded consistently."                                                  | May leave inaccuracies.<br>**Affects: Coordinators**                                            |
+| P-08 | Documentation skipped if a familiar driver is allocated.                          | "Staff occasionally allocate a familiar driver before checking whether required documentation remains current."   | Can leave inaccuracies with accessibility needs.<br>**Affects: Drivers**                        |
+| P-09 | Staff disagree on sharing a journey with other passengers.                        | "Staff disagree about whether sharing should be assumed or explicitly agreed each time."                          | Inconsistent decision making on journeys.<br>**Affects: Passengers, Coordinators**              |
+| P-10 | Staff disagree on handling sensitive details about passengers.                    | "Staff are unsure how to handle sensitive details included unnecessarily by a referrer."                          | Can make the passengers feel vulnerable.<br>**Affects: Passengers**                             |
+| P-11 | Provisional offers are recorded inconsistently.                                   | "but provisional offers are recorded inconsistently"                                                              | Misaccuracies in information about drivers.<br>**Affects: Coordinators**                        |
 
 ## Desired Outcomes
 | ID   | Outcome                                                                                                     | Who Benefits             | Linked Problem(s) |
@@ -38,33 +38,42 @@
 | O-01 | Drivers receive up to date and accurate schedules after changes.                                            | Drivers                  |       P-01        |
 | O-02 | Passengers receive confirmation about their return journey.                                                 | Passengers               |       P-02        |
 | O-03 | Passengers or the person that requested the service receives the final information about their arrangement. | Passengers               |       P-03        |
-| O-04 | Coordinators can tell whether a driver was contacted, available or acceptance.                              | Coordinator              |       P-04        |
-| O-05 |                                                                                                             | Coordinator              |       P-05        |
-| O-06 | Set amount of waiting times for drivers.                                                                    | Passengers               |       P-06        |
-| O-07 | Coordinators receive incomplete journeys that are recorded consistently.                                    | Coordinators             |       P-07        |
+| O-04 | Coordinators can tell whether a driver was contacted or is available.                                       | Coordinator              |       P-04        |
+| O-06 | Drivers contact the passenger on when they will be ready.                                                   | Passengers               |       P-06        |
+| O-07 | Coordinators receive fully recorded information on unsuccessful journeys.                                   | Coordinators             |       P-07        |
 | O-08 | Documentation checked regardless if a familiar driver is allocated.                                         | Coordinators             |       P-08        |
 | O-09 | Driver is aware of consent whether a passenger wants to share a journey.                                    | Coordinators, Passengers |       P-09        |
-| O-10 | Drivers do not handle sensitive information about passengers, only the Coordinator may know.                | Passengers               |       P-10        |
+| O-10 | Volunteers do not handle sensitive information about passengers.                                            | Passengers               |       P-10        |
+| O-11 | Provisional offers are recorded consistently                                                                | Coordinators             |       P-11        |
 
 ## Known Evidence and Uncertainty
 
 ### Evidence
 
-| ID   | Statement | Source |
-| ---- | --------- | ------ |
-| E-01 |           |        |
+| ID   | Statement                                                                                                                                                                                                                     | Source                                                         |
+| ---- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------- |
+| E-01 | Volunteer drivers use their own cars.                                                                                                                                                                                         | **Organisation and current service section. Paragraph 1.**     |
+| E-02 | Partner organisations occasionally provide accessible vehicles.                                                                                                                                                               | **Organisation and current service section. Paragraph 1.**     |
+| E-03 | A volunteer driver states that printed schedules are only useful until a single collection time changes                                                                                                                       | **Stakeholder evidence section. Bullet Point 2.**              |
+| E-04 | A community worker states they believe the passenger should receive the final arrangements even when someone else sends the request.                                                                                          | **Stakeholder evidence section. Bullet Point 4.**              |
+| E-05 | Drivers have completed different checks and training.                                                                                                                                                                         | **Volunteer drivers and availability. Paragraph 2.**           |
+| E-06 | Passengers may need wheelchair space, room for a walking aid, assistance reaching the vehicle or permission for a companion.                                                                                                  | **Journey Requests and Passenger Needs Section. Paragraph 2.** |
+| E-07 | Some services are intended for registered members while occasional community journeys may be open more widely. Membership status, contribution arrangements and priority for essential journeys are not applied consistently. | **Journey Requests and Passenger Needs Section. Paragraph 3.** |
+| E-08 | Provisional offers are inconsistently recorded.                                                                                                                                                                               | **Volunteer drivers and availability. Paragraph 3.**           |
+| E-09 | Coordinators consider passenger needs, driver availability, locations, times and vehicle suitability.                                                                                                                         | **Matching and journey planning. Paragraph 1.**                |
+| E-10 | The initial scope excludes emergency transport and vehicle tracking.                                                                                                                                                          | **Changes, completion and follow-up. Paragraph 3.**            |
 ### Assumptions
-| ID   | Assumption | Reason | Changes |
-| ---- | ---------- | ------ | ------- |
-| A-01 |            |        |         |
+| ID   | Assumption                                                    | Reason                                                                                                  | Changes                                     |
+| ---- | ------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- | ------------------------------------------- |
+| A-01 | Driver Availability is checked before a journey is confirmed. | Drivers provide their usual availability, and provisional offers are used to match drivers to requests. | Driver allocation and booking confirmation. |
 
 ### Questions
-| ID   | Question                                                                 | Reason   | Who Can Answer | Links    |
-| ---- | ------------------------------------------------------------------------ | -------- | -------------- | -------- |
-| Q-01 | Who has priority when demand exceeds available drivers?                  |          | Coordinators   | **N/A**  |
-| Q-02 | Is consent to journey sharing general or required for each journey?      | We can't | Coordinators   | **P-09** |
-| Q-03 | How will recurring journeys be reviewed and reassigned?                  |          | Coordinators   | **N/A**  |
-| Q-04 | What is the maximum waiting time for a passenger who is not ready?       |          | Drivers        | **N/A**  |
-| Q-05 | How are unsuccessful offers, cancellations or unmet demands categorised? |          | Coordinators   | **N/A**  |
-| Q-06 | What information can be shared with drivers and partner organisations?   |          | Passengers     | **P-10** |
-| Q-07 | What happens when a provisional offer reserves a driver?                 |          | Coordinator    | **N/A**  |
+| ID   | Question                                                                 | Reason                                                                                                                                                                         | Who Can Answer | Links                      |
+| ---- | ------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------- | -------------------------- |
+| Q-01 | Who has priority when demand exceeds available drivers?                  | The driver allocation rules cannot be finalised without knowing which requests take precedence when demand exceeds capacity.                                                   | Coordinators   | **N/A**                    |
+| Q-02 | Is consent to journey sharing general or required for each journey?      | The consent process cannot be specified without knowing when consent must be obtained and whether it applies to individual journeys or multiple journeys.                      | Coordinators   | **P-09, O-09**             |
+| Q-03 | How will recurring journeys be reviewed and reassigned?                  | The process for managing recurring journeys cannot be defined without knowing when reviews occur and under what circumstances assignments change                               | Coordinators   | **N/A**                    |
+| Q-04 | What is the maximum waiting time for a passenger who is not ready?       | The service cannot have a defined waiting-time limit or determine when a delayed pickup should be treated as overdue without an agreed threshold                               | Coordinators   | **P-06, O-06**             |
+| Q-05 | How are unsuccessful offers, cancellations or unmet demands categorised? | The classification rules for these outcomes cannot be finalised without knowing which categories distinguish them and how each outcome is defined                              | Coordinators   | **P-04, P-07, O-04, O-07** |
+| Q-06 | What information can be shared with drivers and partner organisations?   | Data access permissions cannot be specified without knowing which information each recipient is authorised to receive.                                                         | Coordinators   | **P-10, O-10**             |
+| Q-07 | When does a provisional offer reserve a driver?                          | The rules for checking driver availability and handling overlapping offers cannot be defined without knowing at what point a provisional offer affects a driver's availability | Coordinator    | **P-04, P-11**             |
