@@ -10,12 +10,11 @@
 4. Coordinators sometimes allocate a familiar driver before checking whether documentation is current.
 5. If no driver is free, the request can go on a waiting list, to a partner or be turned down.
 6. A passenger may cancel, alter a time or change the destination. 
-7. Alters in the journey may cause the driver to become unavailable.
-8. Any replacement for the journey must meet the original passenger and vehicle requirements.
-9. Drivers receive information on journeys and passengers through printed schedules, as not all drivers use email or mobile apps.
-10. If a passenger isn't ready or doesn't appear, the driver may decide on waiting time or who to telephone.
-11. The passenger may receive the final arrangements, though whether this covers the return is unknown.
-12. Drivers complete records of collection, arrival, return and any unsuccessful journey.
+7. Any replacement for the journey must meet the original passenger and vehicle requirements.
+8. Drivers receive information on journeys and passengers through printed schedules, as not all drivers use email or mobile apps.
+9. If a passenger isn't ready or doesn't appear, the driver may decide on waiting time or who to telephone.
+10. The passenger may receive the final arrangements, though whether this covers the return is unknown.
+11. Drivers complete records of collection, arrival, return and any unsuccessful journey.
 
 ## Problems and Consequences
 
@@ -30,7 +29,7 @@
 | P-08 | Documentation skipped if a familiar driver is allocated.                          | "Staff occasionally allocate a familiar driver before checking whether required documentation remains current."   | Can leave inaccuracies with accessibility needs.<br>**Affects: Drivers**                        |
 | P-09 | Staff disagree on sharing a journey with other passengers.                        | "Staff disagree about whether sharing should be assumed or explicitly agreed each time."                          | Inconsistent decision making on journeys.<br>**Affects: Passengers, Coordinators**              |
 | P-10 | Staff disagree on handling sensitive details about passengers.                    | "Staff are unsure how to handle sensitive details included unnecessarily by a referrer."                          | Can make the passengers feel vulnerable.<br>**Affects: Passengers**                             |
-| P-11 | Provisional offers are recorded inconsistently.                                   | "but provisional offers are recorded inconsistently"                                                              | Misaccuracies in information about drivers.<br>**Affects: Coordinators**                        |
+| P-11 | Provisional offers are recorded inconsistently.                                   | "but provisional offers are recorded inconsistently"                                                              | Inaccuracies in information about drivers.<br>**Affects: Coordinators**                         |
 
 ## Desired Outcomes
 | ID   | Outcome                                                                                                     | Who Benefits             | Linked Problem(s) |
@@ -63,9 +62,13 @@
 | E-09 | Coordinators consider passenger needs, driver availability, locations, times and vehicle suitability.                                                                                                                         | **Matching and journey planning. Paragraph 1.**                |
 | E-10 | The initial scope excludes emergency transport and vehicle tracking.                                                                                                                                                          | **Changes, completion and follow-up. Paragraph 3.**            |
 ### Assumptions
-| ID   | Assumption                                                    | Reason                                                                                                  | Changes                                     |
-| ---- | ------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- | ------------------------------------------- |
-| A-01 | Driver Availability is checked before a journey is confirmed. | Drivers provide their usual availability, and provisional offers are used to match drivers to requests. | Driver allocation and booking confirmation. |
+| ID   | Assumption                                                                                                                                                               | Reason                                                                                                                                                                                                                                            | Changes                                        |
+| ---- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------- |
+| A-01 | A journey is considered confirmed only when a driver has accepted the offer and the coordinator has finalised the allocation.                                            | A working definition of the point at when the confirmation occurs is needed to distinguish provisional and confirmed bookings.                                                                                                                    | Booking status and journey confirmation (Q-07) |
+| A-02 | Coordinators are responsible for allocating drivers and confirming journey arrangements.                                                                                 | The scenario mentions coordinators as managing the matching and journey planning, while also referring to staff.                                                                                                                                  | Roles and responsibility.                      |
+| A-04 | Journey sharing may be explicitly agreed by passengers.                                                                                                                  | Staff has disagreed between whether journey sharing may be assumed or explicitly agreed each time. Q-02.                                                                                                                                          | Journey sharing consent (Q-02, P-09, O-09).    |
+| A-05 | When the request is submitted by a relative or community worker, the passenger may receive the final journey arrangements.                                               | For this analysis we assume that the passengers should receive the final arrangements.                                                                                                                                                            | Recipient management (P-03, O-03).             |
+| A-06 | Volunteers may only access the passenger and journey information that is necessary for successful transport duties. Excluding financial and unrelated passenger history. | The scenario gives the information included in driver schedules but does not define precisely what information is necessary for each journey. A working position is needed to define access rules and support O-10 while Q-06 remains unanswered. | Passenger data protection. (Q-06, O-10).       |
 
 ### Questions
 | ID   | Question                                                                 | Reason                                                                                                                                                                         | Who Can Answer | Links                      |
