@@ -1,10 +1,9 @@
 ## 1. Purpose of this section
-<!-- 2–3 sentences: why stakeholders and actors are separated, and how this feeds requirements (file 04) and use cases. -->
+The purpose of this section is to distinguish between stakeholders and actors. Stakeholders are everyone who has an interest in the system, whereas actors are the roles that actually interact with the system across the boundary from the `02-purpose-scope-boundary` file.
+I have separated them because even if some stakeholders don't use the system, their interests still "shape" the system, for example: Kerry Community Link: records, unmet demand, and the Passenger Companion: companion permission.
+Actor goals will become the use cases, whereas the stakeholder concerns feed the requirements and business rules.
 
-## 2. Stakeholder identification approach
-<!-- Briefly: sources used (scenario sections, stakeholder quotes), and how you classified direct / indirect / external. -->
-
-## 3. Stakeholder catalogue
+## 2. Stakeholder catalogue
 
 | ID    | Stakeholder                    | Type     | Goals                                                                                              | Concerns                                                                                       | Influence | Interest | Evidence                                                                                              | Related problems |
 | ----- | ------------------------------ | -------- | -------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- | --------- | -------- | ----------------------------------------------------------------------------------------------------- | ---------------- |
@@ -17,46 +16,59 @@
 | SH-07 | Partner Organisations          | External | Support the service by making suitable transport resources available.                              | Whether accessible vehicles are available when needed.                                         | Medium    | Medium   | Organisation and current service, paragraph 1                                                         | N/A              |
 | SH-08 | Kerry Community Link           | Indirect | Provide reliable community transport and monitor service demand.                                   | Unmet demand, incomplete records and inefficient use of resources.                             | High      | High     | Changes, completion and follow-up                                                                     | P-04, P-07, P-11 |
 | SH-09 | Passenger Companion            | Indirect | Accompany or assist a passenger when required.                                                     | Whether the companion is permitted and there is sufficient space for them.                     | Low       | Medium   | Journey requests and passenger needs, paragraph 2                                                     | N/A              |
-<!-- Explain any borderline cases, i.e. roles that could fit two categories, and why you chose one. -->
+### 2.1 Classification Notes
+Start a yapatron here:
 
-## 4. Actors
+## 3. Actors
 
-### 4.1 Primary actors
-| ID    | Actor       | Maps to stakeholder | Why it crosses the boundary                                                                                                                                                 |
-| ----- | ----------- | ------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| AP-01 | Coordinator | SH-01               | Manages journey requests, records driver availability and responses, coordinates suitable drivers and vehicles, and handles changes and journey outcomes through the system |
+### 3.1 Primary actors
+| ID    | Actor                          | Maps to stakeholder | Why it crosses the boundary                                                                                                                                                 |
+| ----- | ------------------------------ | ------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| AP-01 | Coordinator                    | SH-01               | Manages journey requests, records driver availability and responses, coordinates suitable drivers and vehicles, and handles changes and journey outcomes through the system |
+| AP-02 | Volunteer Drivers              | SH-02               | Supply availability, respond to journey offers and report journey outcomes.                                                                                                 |
+| AP-03 | Passengers                     | SH-03               | Provide journey details and accessibility requirements, and receive confirmations                                                                                           |
+| AP-04 | Referrers                      | SH-06               | Submit requests on behalf of passengers and may need to receive final arrangements.                                                                                         |
+| AP-05 | Accessible-vehicle Coordinator | SH-04               | Provides and updates vehicle information that may be needed for journeys.                                                                                                   |
+| AP-06 | Volunteer Coordinator          | SH-05               | Maintains driver records, availability and authorisation status.                                                                                                            |
+
+### 3.2 Supporting actors
+| ID    | Actor                 | Maps to stakeholder | Service it provides to the system                                                  |
+| ----- | --------------------- | ------------------- | ---------------------------------------------------------------------------------- |
+| AS-01 | Partner Organisations | SH-07               | Occasionally provide accessible vehicles that may be needed for suitable journeys. |
 
 
-### 4.2 Supporting actors
-| ID    | Actor                          | Maps to stakeholder | Service it provides to the system                                                   |
-| ----- | ------------------------------ | ------------------- | ----------------------------------------------------------------------------------- |
-| AS-01 | Partner Organisations          | SH-07               | Occasionally provide accessible vehicles that may be needed for suitable journeys.  |
-| AS-02 | Volunteer Drivers              | SH-02               | Supply availability, respond to journey offers and report journey outcomes.         |
-| AS-03 | Passengers                     | SH-03               | Provide journey details and accessibility requirements, and receive confirmations   |
-| AS-04 | Referrers                      | SH-06               | Submit requests on behalf of passengers and may need to receive final arrangements. |
-| AS-05 | Accessible-vehicle Coordinator | SH-04               | Provides and updates vehicle information that may be needed for journeys.           |
 
-### 4.3 Offstage stakeholders
+### 3.3 Offstage stakeholders
 | Stakeholder                  | Interest the system must protect                                                                  | Requirement areas it influences                                                                  |
 | ---------------------------- | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------ |
 | SH-08 (Kerry Community Link) | Reliable coordination of journeys, accurate records and visibility of unmet demand.               | Journey request management, driver matching, workload monitoring and incomplete journey records. |
 | SH-09 (Passenger Companion)  | Passengers receive reliable arrangements, and any companion's involvement is properly considered. | Journey confirmations, passenger requirements, accessibility needs and companion arrangements.   |
 
-## 5. Actor–goal catalogue
+## 4. Actor–goal catalogue
+_MoSCoW_
 
-| Goal ID | Actor | Goal (verb + noun, user-level) | Priority hint | Candidate use case | Source / evidence |
-| ------- | ----- | ------------------------------ | ------------- | ------------------ | ----------------- |
-| AG-01   | A-01  |                                |               | UC-0x              |                   |
+| Goal ID | Actor | Goal                                               | Priority hint | Candidate use case | Source / evidence                                                                                          |
+| ------- | ----- | -------------------------------------------------- | ------------- | ------------------ | ---------------------------------------------------------------------------------------------------------- |
+| AG-01   | AP-01 | Assign vehicles and drivers to a journey.          | Must          | UC-0x              | Matching and journey planning, paragraph 1, E-09, SC-08                                                    |
+| AG-02   | AP-01 | Review unallocated requests and unmet demand.      | Must          | UC-0x              | Changes, completion and follow-up, Volunteer drivers and availability,<br>SC-11, P-07                      |
+| AG-03   | AP-01 | Arrange a replacement driver.                      | Should        | UC-0x              | Changes, completion and follow-up, paragraphs 1–2,<br>SC-10, P-01                                          |
+| AG-04   | AP-02 | View current journey schedule.                     | Must          | UC-0x              | Changes, completion and follow-up, E-03, SC-06, P-01                                                       |
+| AG-05   | AP-02 | Record a journey outcome.                          | Should        | UC-0x              | Changes, completion and follow-up, paragraph 2, O-07                                                       |
+| AG-06   | AP-02 | Respond to journey offer.                          | Must          | UC-0x              | Volunteer drivers and availability, paragraph 2, E-08, O-11                                                |
+| AG-07   | AP-02 | Update availability.                               | Should        | UC-0x              | Volunteer drivers and availability, paragraph 1                                                            |
+| AG-08   | AP-03 | Request a journey.                                 | Must          | UC-0x              | Organisation and current service, paragraph 1, Journey requests and passenger needs, paragraph 1,<br>SC-01 |
+| AG-09   | AP-03 | Check journey confirmation.                        | Should        | UC-0x              | Changes, completion and follow-up, E-04, O-03                                                              |
+| AG-10   | AP-04 | Request a journey on a passenger's behalf.         | Must          | UC-0x              | Organisation and current service, paragraph 1, Changes, completion and follow-up, E-04,<br>SC-01, P-04     |
+| AG-11   | AP-04 | Check journey confirmation.                        | Should        | UC-0x              | Changes, completion and follow-up, E-04, O-03                                                              |
+| AG-12   | AP-05 | Update vehicle information.                        | Should        | UC-0x              | Organisation and current service, paragraph 1, E-01, E-02                                                  |
+| AG-13   | AP-06 | Maintain driver authorisation and training status. | Must          | UC-0x              | Volunteer drivers and availability, paragraph 2, E-05, P-08, O-08                                          |
 
-## 6. Stakeholder–problem mapping (optional, short)
-| Problem | Most affected stakeholders |
-|---------|----------------------------|
-| P-01 | |
 
-## 7. Assumptions and open questions
-| ID | Type (Assumption / Question) | Statement | Affects | Carry to file 05? |
-|----|------------------------------|-----------|---------|-------------------|
-| AS-0x / Q-0x | | | | Yes/No |
 
-## 8. Revision notes
-<!-- Changes made and why. These are useful for the reflection and AI log later. -->
+## 5. Assumptions and open questions
+| ID           | Type (Assumption / Question) | Statement | Affects | Carry to uncertainty register? |
+| ------------ | ---------------------------- | --------- | ------- | ------------------------------ |
+| AS-0x / Q-0x |                              |           |         | Yes/No                         |
+
+## 6. Revision notes
+Drivers, passengers and referrers moved from supporting to primary actors; UC IDs must be made once Use Cases are made in `04-use-cases`. 
