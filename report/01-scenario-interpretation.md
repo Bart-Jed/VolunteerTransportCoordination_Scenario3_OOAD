@@ -43,7 +43,7 @@
 | O-08 | Documentation checked regardless if a familiar driver is allocated.                                         | Coordinators             |       P-08        |
 | O-09 | Driver is aware of consent whether a passenger wants to share a journey.                                    | Coordinators, Passengers |       P-09        |
 | O-10 | Volunteers do not handle sensitive information about passengers.                                            | Passengers               |       P-10        |
-| O-11 | Provisional offers are recorded consistently                                                                | Coordinators             |       P-11        |
+| O-11 | Provisional offers are recorded consistently.                                                               | Coordinators             |       P-11        |
 
 ## Known Evidence and Uncertainty
 

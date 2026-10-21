@@ -20,19 +20,19 @@ Passengers, volunteer drivers, coordinators, referrers and partner organisations
 | F-08 | Unallocated requests, provisional offers, driver workload, unmet demand and incomplete journey records | Coordinator                                                  | Out of System |
 ## 3. In Scope
 
-|  ID   | Capability                                                                           |   Problem IDs    | Evidence                                                  |
-| :---: | ------------------------------------------------------------------------------------ | :--------------: | :-------------------------------------------------------- |
-| SC-01 | Record Journey Requests.                                                             |       P-03       | E-04                                                      |
-| SC-02 | Show Driver Availability to coordinators.                                            |    P-04, P-11    | E-08                                                      |
-| SC-03 | Provide Suitability Requirements about Passengers to coordinators.                   |    P-08, P-10    | E-06, E-09                                                |
-| SC-04 | Flag Journey Changes to coordinators and drivers.                                    |    P-01, P-03    | E-03, E-04                                                |
-| SC-05 | Record Journey Records (unsuccessful, collections, etc)                              |   P-02, P-07,    | Changes, Completion and Follow-up section, paragraphs 1–2 |
-| SC-06 | Provide drivers' schedule to drivers                                                 |       P-01       | E-03                                                      |
-| SC-07 | Provide confirmations to passengers.                                                 |    P-02, P-03    | E-04                                                      |
-| SC-08 | Matching journey details with vehicle suitability for passenger needs.               |    P-08, P-09    | E-01, E-02, E-06, E-09                                    |
-| SC-09 | Record driver responses                                                              |    P-04, P-11    | E-08                                                      |
-| SC-10 | Handle replacement arrangements when a driver drops out                              |       P-01       | Changes, Completion and Follow-up section, paragraph 1    |
-| SC-11 | Show coordinators (unallocated requests, workload, unmet demand, incomplete records) | P-04, P-07, P-11 | Changes, Completion and Follow-up section, paragraph 3    |
+|  ID   | Capability                                                                         |   Problem IDs    | Evidence                                                  |
+| :---: | ---------------------------------------------------------------------------------- | :--------------: | :-------------------------------------------------------- |
+| SC-01 | Record Journey Requests.                                                           |       P-03       | E-04                                                      |
+| SC-02 | Show Driver Availability to coordinators.                                          |    P-04, P-11    | E-08                                                      |
+| SC-03 | Provide Suitability Requirements about Passengers to coordinators.                 |    P-08, P-10    | E-06, E-09                                                |
+| SC-04 | Flag Journey Changes to coordinators and drivers.                                  |    P-01, P-03    | E-03, E-04                                                |
+| SC-05 | Record Journey Records (unsuccessful, collections, etc)                            |   P-02, P-07,    | Changes, Completion and Follow-up section, paragraphs 1–2 |
+| SC-06 | Provide drivers' schedule to drivers                                               |       P-01       | E-03                                                      |
+| SC-07 | Provide confirmations to passengers.                                               |    P-02, P-03    | E-04                                                      |
+| SC-08 | Matching journey details with vehicle suitability for passenger needs.             |    P-08, P-09    | E-01, E-02, E-06, E-09                                    |
+| SC-09 | Record driver responses                                                            |    P-04, P-11    | E-08                                                      |
+| SC-10 | Handle replacement arrangements when a driver drops out                            |       P-01       | Changes, Completion and Follow-up section, paragraph 1    |
+| SC-11 | Show coordinators unallocated requests, workload, unmet demand, incomplete records | P-04, P-07, P-11 | Changes, Completion and Follow-up section, paragraph 3    |
 
 ## 4. Out of scope
 
