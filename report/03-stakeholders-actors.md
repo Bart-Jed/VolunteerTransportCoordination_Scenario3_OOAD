@@ -1,6 +1,6 @@
 ## 1. Purpose of this section
 The purpose of this section is to distinguish between stakeholders and actors. Stakeholders are everyone who has an interest in the system, whereas actors are the roles that actually interact with the system across the boundary from the `02-purpose-scope-boundary` file.
-I have separated them because even if some stakeholders don't use the system, their interests still "shape" the system, for example: Kerry Community Link: records, unmet demand, and the Passenger Companion: companion permission.
+I have separated them because even if some stakeholders don't use the system, their interests still shape the system, for example: Kerry Community Link: records, unmet demand, and the Passenger Companion: companion permission.
 Actor goals will become the use cases, whereas the stakeholder concerns feed the requirements and business rules.
 
 ## 2. Stakeholder catalogue
@@ -17,7 +17,19 @@ Actor goals will become the use cases, whereas the stakeholder concerns feed the
 | SH-08 | Kerry Community Link           | Indirect | Provide reliable community transport and monitor service demand.                                   | Unmet demand, incomplete records and inefficient use of resources.                             | High      | High     | Changes, completion and follow-up                                                                     | P-04, P-07, P-11 |
 | SH-09 | Passenger Companion            | Indirect | Accompany or assist a passenger when required.                                                     | Whether the companion is permitted and there is sufficient space for them.                     | Low       | Medium   | Journey requests and passenger needs, paragraph 2                                                     | N/A              |
 ### 2.1 Classification Notes
-Start a yapatron here:
+Each stakeholder came from each scenario section and stakeholder quotes. I then decided whether they should have Direct, Indirect or External relationship to the system.
+
+I decided to merge relatives and  community workers into one stakeholder (referrers) because they all share the same goal; to make a request for the passenger, and share their needs and concerns.
+I decided to make referrers external because they are outside of the Kerry Community Link but can still submit journey requests.
+
+I decided to drop the Members because as far as the system is concerned, a member and non-member will both make the same journey request, and the priority rules are unconfirmed, so membership is treated as a passenger detail rather than a separate stakeholder.
+
+I decided that drivers should use the system directly because they will be able to view their schedules through the system which would address P-01, and they can also record journey outcomes on one platform which would address P-07.
+However, the scenario mentioned not all drivers use email or apps, and C-03 also says the system cannot rely on email or apps. 
+This can be worked around by being able to print schedules from the system and the coordinator recording their updates.
+
+I decided Passengers and referrers will have direct access to the system as well so that they can check their journey information directly, which also addresses P-02 and P-03.
+
 
 ## 3. Actors
 
@@ -35,7 +47,7 @@ Start a yapatron here:
 | ID    | Actor                 | Maps to stakeholder | Service it provides to the system                                                  |
 | ----- | --------------------- | ------------------- | ---------------------------------------------------------------------------------- |
 | AS-01 | Partner Organisations | SH-07               | Occasionally provide accessible vehicles that may be needed for suitable journeys. |
-
+Partner Organisations was more of a actor decision rather than stakeholder decision.
 
 
 ### 3.3 Offstage stakeholders
@@ -57,8 +69,8 @@ _MoSCoW_
 | AG-06   | AP-02 | Respond to journey offer.                          | Must          | UC-0x              | Volunteer drivers and availability, paragraph 2, E-08, O-11                                                |
 | AG-07   | AP-02 | Update availability.                               | Should        | UC-0x              | Volunteer drivers and availability, paragraph 1                                                            |
 | AG-08   | AP-03 | Request a journey.                                 | Must          | UC-0x              | Organisation and current service, paragraph 1, Journey requests and passenger needs, paragraph 1,<br>SC-01 |
-| AG-09   | AP-03 | Check journey confirmation.                        | Should        | UC-0x              | Changes, completion and follow-up, E-04, O-03                                                              |
-| AG-10   | AP-04 | Request a journey on a passenger's behalf.         | Must          | UC-0x              | Organisation and current service, paragraph 1, Changes, completion and follow-up, E-04,<br>SC-01, P-04     |
+| AG-09   | AP-03 | Check journey confirmation.                        | Should        | UC-0x              | Changes, completion and follow-up, P-02, O-02                                                              |
+| AG-10   | AP-04 | Request a journey on a passenger's behalf.         | Must          | UC-0x              | Organisation and current service, paragraph 1, Changes, completion and follow-up, E-04,<br>SC-01, P-03     |
 | AG-11   | AP-04 | Check journey confirmation.                        | Should        | UC-0x              | Changes, completion and follow-up, E-04, O-03                                                              |
 | AG-12   | AP-05 | Update vehicle information.                        | Should        | UC-0x              | Organisation and current service, paragraph 1, E-01, E-02                                                  |
 | AG-13   | AP-06 | Maintain driver authorisation and training status. | Must          | UC-0x              | Volunteer drivers and availability, paragraph 2, E-05, P-08, O-08                                          |
@@ -66,9 +78,10 @@ _MoSCoW_
 
 
 ## 5. Assumptions and open questions
-| ID           | Type (Assumption / Question) | Statement | Affects | Carry to uncertainty register? |
-| ------------ | ---------------------------- | --------- | ------- | ------------------------------ |
-| AS-0x / Q-0x |                              |           |         | Yes/No                         |
+| ID    | Type (Assumption / Question) | Statement                            | Affects           | Carry to uncertainty register? |
+| ----- | ---------------------------- | ------------------------------------ | ----------------- | ------------------------------ |
+| AS-01 | Driver Access                | Some drivers don't use mail or apps. | This can lead to  | Yes                            |
+| Q-0x  |                              |                                      |                   |                                |
 
 ## 6. Revision notes
 Drivers, passengers and referrers moved from supporting to primary actors; UC IDs must be made once Use Cases are made in `04-use-cases`. 
