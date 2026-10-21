@@ -19,7 +19,7 @@ Actor goals will become the use cases, whereas the stakeholder concerns feed the
 ### 2.1 Classification Notes
 Each stakeholder came from each scenario section and stakeholder quotes. I then decided whether they should have Direct, Indirect or External relationship to the system.
 
-I decided to merge relatives and  community workers into one stakeholder (referrers) because they all share the same goal; to make a request for the passenger, and share their needs and concerns.
+I decided to merge relatives and community workers into one stakeholder (referrers) because they both share the same goal to make a request for the passenger, and share their needs and concerns.
 I decided to make referrers external because they are outside of the Kerry Community Link but can still submit journey requests.
 
 I decided to drop the Members because as far as the system is concerned, a member and non-member will both make the same journey request, and the priority rules are unconfirmed, so membership is treated as a passenger detail rather than a separate stakeholder.
@@ -29,6 +29,8 @@ However, the scenario mentioned not all drivers use email or apps, and C-03 also
 This can be worked around by being able to print schedules from the system and the coordinator recording their updates.
 
 I decided Passengers and referrers will have direct access to the system as well so that they can check their journey information directly, which also addresses P-02 and P-03.
+
+I decided that I will split up coordinators into their roles because each has a different concern (matching, authorised drivers, offer tracking) and a separate quote. (A-06 in `02-purpose-scope-boundary`)
 
 
 ## 3. Actors
@@ -47,8 +49,7 @@ I decided Passengers and referrers will have direct access to the system as well
 | ID    | Actor                 | Maps to stakeholder | Service it provides to the system                                                  |
 | ----- | --------------------- | ------------------- | ---------------------------------------------------------------------------------- |
 | AS-01 | Partner Organisations | SH-07               | Occasionally provide accessible vehicles that may be needed for suitable journeys. |
-Partner Organisations was more of a actor decision rather than stakeholder decision.
-
+Partner Organisations is a supporting actor because the system calls on them when an accessible vehicle is needed, but never start an interaction themselves.
 
 ### 3.3 Offstage stakeholders
 | Stakeholder                  | Interest the system must protect                                                                  | Requirement areas it influences                                                                  |
@@ -78,10 +79,12 @@ _MoSCoW_
 
 
 ## 5. Assumptions and open questions
-| ID    | Type (Assumption / Question) | Statement                            | Affects           | Carry to uncertainty register? |
-| ----- | ---------------------------- | ------------------------------------ | ----------------- | ------------------------------ |
-| AS-01 | Driver Access                | Some drivers don't use mail or apps. | This can lead to  | Yes                            |
-| Q-0x  |                              |                                      |                   |                                |
+| ID   | Assumption Or Question     | Statement                                                                                                                                    | Affects                                                                                     | Carry to uncertainty register? |
+| ---- | -------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- | ------------------------------ |
+| A-13 | Assumption - Driver Access | The drivers will use the system. The drivers without digital access will use printed schedules, with coordinators informing them on updates. | The driver goals (AG-04 to AG-07), the actor itself (AP-02), as well as C-03, P-01 and P-07 | Yes                            |
+| Q-08 | Question - Driver Access   | How many drivers lack digital access?                                                                                                        | A-13                                                                                        | Yes                            |
+| Q-09 | Question - Driver Access   | Are coordinator-recorded updates acceptable for drivers without digital access?                                                              | A-13, AP-02                                                                                 | Yes                            |
+
 
 ## 6. Revision notes
-Drivers, passengers and referrers moved from supporting to primary actors; UC IDs must be made once Use Cases are made in `04-use-cases`. 
+Drivers, passengers and referrers moved from supporting to primary actors; UC IDs must be made once Use Cases are made in `04-use-cases`.
