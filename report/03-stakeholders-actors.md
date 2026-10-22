@@ -87,4 +87,4 @@ _MoSCoW_
 
 
 ## 6. Revision notes
-Drivers, passengers and referrers moved from supporting to primary actors; UC IDs must be made once Use Cases are made in `04-use-cases`.
+- Drivers, passengers and referrers moved from supporting to primary actors; UC IDs must be made once Use Cases are made in `04-use-cases`.

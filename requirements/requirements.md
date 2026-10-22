@@ -54,5 +54,5 @@ The reason categories in FR-07 are still unconfirmed, also links to Q-05.
 "Current" (in FR-05) meaning the driver's checks, training or authorisation has been checked or whether they were expired.
 
 ## 7. Revision notes
-Split FR-03 into FR-03 and FR-04 to keep requirements atomic. 
-FR-08 lowered to **Should** (see section 5). 
+- Split FR-03 into FR-03 and FR-04 to keep requirements atomic. 
+- FR-08 lowered to **Should** (see section 5). 
