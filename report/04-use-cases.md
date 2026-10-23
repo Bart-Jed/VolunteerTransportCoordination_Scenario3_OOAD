@@ -74,7 +74,7 @@ UC-09 assumes authorisation records exist and drivers' maintenance is deferred.
 - **3a.** If there is no suitable driver, the coordinator places the passenger on a waiting list or inform the passenger no journey is available. Use case ends.
 - **3b.** If there is no suitable vehicle, contact the partner for an accessible vehicle. If one is provided, resume at step 3; otherwise go to 3a.
 - **3c.** A vehicle is available but no authorised driver is available. Coordinator seeks a partner driver or follows 3a.
-- **3d.** The passenger could share a journey with another booking (Q-02)(BR-08). Otherwise coordinator confirms the passenger agrees to share before the journeys are combined (Q-02). If they don’t agree, resume at step 4
+- **3d.** The passenger could share a journey with another booking (Q-02)(BR-08). Otherwise coordinator confirms the passenger agrees to share before the journeys are combined (Q-02). If they don't agree, resume at step 4
 - **4a.** Coordinator attempts to select a familiar driver whose checks have expired, the system rejects the selection and shows the expired check (BR-03). Resume at step 3.
 - **5a.** Driver doesn't use email/app. Coordinator phones the driver instead and records that the offer was made. Resume at step 6.
 
