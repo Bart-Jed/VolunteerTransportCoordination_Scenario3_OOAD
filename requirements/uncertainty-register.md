@@ -47,6 +47,7 @@ This file's purpose is to list everything that is uncertain. Other files referen
 | Q-08 | How many drivers lack digital access?                                           | Coordinators must know how many drivers will rely on the coordinator fallback.                                                                                                 | Coordinators, Drivers             | A-13                       |
 | Q-09 | Are coordinator-recorded updates acceptable for drivers without digital access? | Coordinators must know whether the drivers will accept such updates in this form.                                                                                              | Coordinator, Kerry Community Link | A-13, AP-02                |
 | Q-10 | How long do a driver's checks, training and authorisation stay valid?           | Drivers checks are required for health and safety purposes. Without knowing this the journeys could be dangerous.                                                              | Kerry Community Link, Coordinator | FR-05, BR-03, R-04         |
+| Q-11 | How are contribution arrangements applied?                                      | This decides whether contributions are an attribute of Passenger, of Journey, or a separate concept, and whether the system needs to record them at all                        | Kerry Community Link              |                            |
 
 ## 6. Revision notes
 - Superseded A-07, A-08 and A-09 with FR-01, FR-09 and A-13 respectively.

@@ -13,7 +13,6 @@ A business rule is a policy of the organisation that applies regardless of any s
 | BR-07 | A journey is confirmed only when the driver accepts and the coordinator finalises.   | Assumed   |                                A-01                                |     FR-13, FR-09     | Confirm with coordinators.                                                   |
 | BR-08 | Passengers may only share a journey if they have explicitly agreed to it.            | Assumed   |                             A-04, Q-02                             |        FR-04         | Confirm with coordinators and passengers.<br>Agreement scope is unconfirmed. |
 ## 3. Rules not yet defined
-<!-- Policies the scenario says are unresolved: list them and point to the Q-xx in the uncertainty register. Do NOT write them as rules. -->
 
 | Question ID | Unresolved Policy                                                   | Affects             |
 | ----------- | ------------------------------------------------------------------- | ------------------- |
