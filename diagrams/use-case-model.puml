@@ -1,0 +1,58 @@
+@startuml
+left to right direction
+skinparam packageStyle rectangle
+
+actor "Coordinator" as COORD
+actor "Passenger" as PASS
+actor "Referrer" as REF
+actor "Accessible-vehicle Coordinator" as AVC
+actor "Volunteer Driver" as DRIVER
+actor "Volunteer Coordinator" as VCOORD
+actor "Partner Organisation" as PARTNER
+
+rectangle "Linker System" {
+  usecase "UC-01 Submit Journey Request" as UC01
+  usecase "UC-02 View Journey Schedule" as UC02
+  usecase "UC-03 Check Journey Confirmation" as UC03
+  usecase "UC-04 Allocate Driver to Journey" as UC04
+  usecase "UC-05 Respond to Journey Offer" as UC05
+  usecase "UC-06 Record Journey Outcomes" as UC06
+  usecase "UC-07 Arrange Replacement Driver" as UC07
+  usecase "UC-08 Update Vehicle Information" as UC08
+  usecase "UC-09 Maintain Driver Authorisation" as UC09
+  usecase "UC-10 Update Availability" as UC10
+  usecase "UC-11 Review Unallocated Requests" as UC11
+  usecase "UC-12 Record Journey Change" as UC12
+}
+
+PASS --> UC01
+REF --> UC01
+
+DRIVER --> UC02
+
+PASS --> UC03
+REF --> UC03
+
+COORD --> UC04
+UC04 --> DRIVER
+UC04 --> PARTNER
+
+DRIVER --> UC05
+
+DRIVER --> UC06
+
+COORD --> UC07
+UC07 --> DRIVER
+UC07 --> PARTNER
+
+AVC --> UC08
+
+VCOORD --> UC09
+
+DRIVER --> UC10
+
+COORD --> UC11
+
+COORD --> UC12
+UC12 --> DRIVER
+@enduml

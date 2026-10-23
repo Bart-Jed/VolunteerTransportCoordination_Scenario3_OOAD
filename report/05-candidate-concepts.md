@@ -65,25 +65,24 @@ I picked out nouns from the scenario as well as verbs which I can then use to de
 | CC-32 | Replacement driver                     | Changes, completion and follow-up                                        | Actor-role               | Merge with CC-06 | Still a volunteer driver, but for a particular journey.                                                                              |
 | CC-33 | Membership status                      | Journey requests and passenger needs                                     | Attribute                | Convert to CC-01 | Passenger description.                                                                                                               |
 | CC-34 | Contribution arrangement               | Journey requests and passenger needs                                     | Unclear                  | Remove           | Structure unclear in scenario. (Q-11)                                                                                                |
-| CC-35 | Journey priority                       | Journey requests and passenger needs                                     | Attribute                | Convert to CC-12 | Decides which requests drivers will get first.                                                                                       |
+| CC-35 | Journey priority                       | Journey requests and passenger needs                                     | Attribute                | Convert to CC-12 | Decides which requests get drivers first when demand is high.                                                                        |
 | CC-36 | Offer                                  | Matching and journey planning                                            | Class                    | Keep             | Can be several offers per journey, with each having their own status (FR-10, FR-13).                                                 |
 | CC-37 | Emergency Transport / Vehicle Tracking | Changes, completion and follow-up                                        | Out of scope             | Remove           | Explicitly excluded from scope.                                                                                                      |
 | CC-38 | Accessible Vehicle                     | Volunteer drivers and availability                                       | Class                    | Merge with CC-20 | The kind of vehicle with links to the accessibility attribute.                                                                       |
 | CC-39 | Telephone notes / email / spreadsheets | Organisation and current service                                         | Current process artefact | Remove           | How work is recorded now, and not domain information.                                                                                |
 ## Retained Concepts
-- CC-01 - Passenger 
-- CC-02 - Kerry Community Link
-- CC-10 - Partner (organisation)
-- CC-12 - Journey request
-- CC-15 - Passenger need
-- CC-16 - Driver availability
-- CC-20 - Vehicle
-- CC-21 - Journey
-- CC-22 - Driver check
-- CC-26 - Shared journey
-- CC-27 - Waiting-list entry
-- CC-36 - Offer
-
+- CC-01 Passenger
+- CC-04 Coordinator
+- CC-05 Referrer
+- CC-06 Volunteer Driver
+- CC-10 Partner
+- CC-12 Journey request
+- CC-15 Passenger need
+- CC-16 Driver availability
+- CC-20 Vehicle
+- CC-21 Journey
+- CC-22 Driver check
+- CC-36 Offer
 ## Key Decisions
 
 - Journey request and Journey kept separate, as Journey request is the journey information awaiting for allocation, and Journey is the actual journey that is underway.
@@ -94,20 +93,20 @@ I picked out nouns from the scenario as well as verbs which I can then use to de
 
 ## Glossary
 
-| Term                    | Definition                                                                                                                                                                                | Related IDs                |
-| ----------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------- |
-| Passenger               | A resident who has difficulty using ordinary public transport, and travels on a journey.                                                                                                  | CC-01                      |
-| Kerry Community Link    | The organisation that coordinates non-emergency journeys for residents.                                                                                                                   | CC-02                      |
-| Partner (organisations) | Organisation that is partnered with Kerry Community Link. It provides accessible vehicles occasioanlly.                                                                                   | CC-10                      |
-| Journey request         | The information about the journey the passenger or referrer has submitted to the system. It includes details such as accessibility needs, type of journey, destination, collection, time. | CC-12, FR-01, FR-12        |
-| Passenger need          | Practical transport needs such as wheelchair space, walking aid space or help reaching the vehicle.                                                                                       | CC-15, FR-03               |
-| Driver availability     | The periods of when a driver is free to take on journey requests.                                                                                                                         | CC-16, FR-02               |
-| Vehicle                 | A driver's own car or the partner's accessible vehicle with capacity and accessibility features, which pick up passengers.                                                                | CC-20                      |
-| Journey                 | The actual trip that is arranged. It has attributes such as times, status and outcome, and contains which driver (with what vehicle) has undertaken the journey.                          | CC-21, FR-13, FR-09, FR-07 |
-| Driver check            | The driver's training and authorisation, where each one can have multiple types and expiry dates.                                                                                         | CC-22, FR-05               |
-| Shared journey          | More than one passenger on a journey.                                                                                                                                                     | CC-26                      |
-| Waiting-list entry      | The request status of which passengers have not yet been assigned a driver.                                                                                                               | CC-27, FR-12               |
-| Offer                   | A proposal to the volunteer drivers that must be answered, but no reason for declining must be given.                                                                                     | CC-36, FR-10, FR-13, UC-05 |
-| Volunteer Driver        | A volunteer who uses their own car to carry out journeys, provides weekly availability, and accepts or declines offers.                                                                   | CC-06, FR-02, FR-04        |
-| Referrer                | A relative or community worker who submits a request on behalf of a passenger, and may receive updates about the journey.                                                                 | CC-05                      |
-| Coordinator             | The coordinator decides which driver to allocate to a journey, and is also responsible for recording details about drivers, demands, workload, and journey stages into the system         | CC-04                      |
+| Term                   | Definition                                                                                                                                                                               | Related IDs                |
+| ---------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------- |
+| Passenger              | A resident who has difficulty using ordinary public transport, and travels on a journey.                                                                                                 | CC-01                      |
+| Kerry Community Link   | The organisation that coordinates non-emergency journeys for residents.                                                                                                                  | CC-02                      |
+| Partner (organisation) | An external organisation that occasionally provides accessible vehicles.                                                                                                                 | CC-10                      |
+| Journey request        | The journey details a passenger or referrer submits, including needs, journey type, destination, collection and times. One request can result in several journeys (return or recurring). | CC-12, FR-01, FR-12        |
+| Passenger need         | Practical transport needs such as wheelchair space, walking aid space or help reaching the vehicle.                                                                                      | CC-15, FR-03               |
+| Driver availability    | The periods of when a driver is free to take on journey requests.                                                                                                                        | CC-16, FR-02               |
+| Vehicle                | A driver's own car or the partner's accessible vehicle with capacity and accessibility features, which pick up passengers.                                                               | CC-20                      |
+| Journey                | The actual trip that is arranged. It has attributes such as times, status and outcome, and contains which driver (with what vehicle) has undertaken the journey.                         | CC-21, FR-13, FR-09, FR-07 |
+| Driver check           | A single check, training record or authorisation a driver has completed, with one type and one expiry date. A driver can have several.                                                   | CC-22, FR-05               |
+| Shared journey         | More than one passenger on a journey.                                                                                                                                                    | CC-26                      |
+| Waiting-list entry     | The status of a request when no suitable driver is available.                                                                                                                            | CC-27, FR-12               |
+| Offer                  | A provisional proposal to a volunteer driver to carry out a specific journey. The driver accepts or declines, and a reason for declining is not required.                                | CC-36, FR-10, FR-13, UC-05 |
+| Volunteer Driver       | A volunteer who uses their own car to carry out journeys, provides weekly availability, and accepts or declines offers.                                                                  | CC-06, FR-02, FR-04        |
+| Referrer               | A relative or community worker who submits a request on behalf of a passenger, and may receive updates about the journey.                                                                | CC-05                      |
+| Coordinator            | The coordinator decides which driver to allocate to a journey, and is also responsible for recording details about drivers, demands, workload, and journey stages into the system        | CC-04                      |

@@ -43,11 +43,11 @@ Some requirements were lowered. FR-08 (Showing the driver's schedule to them) wa
 **Won't** requirements such as emergency transport and real time vehicle tracking (OS-01, OS-02) are excluded by the scenario, however other requirements such as eligibility, membership, priority and journey sharing (OS-04, OS-05) are deferred until the policy is confirmed (Q-01, Q-02).
 
 ## 6. Open issues
-"15 minutes" (in NFR-04) is a working figure, confirm with coordinators. This can be added as a new assumption in the uncertainty register.
+"15 minutes" (NFR-04) is a working figure recorded as A-14. Confirm with coordinators
 
 The reason categories in FR-07 are still unconfirmed, also links to Q-05.
 
-"Confirmed" (in FR-13) is when a driver accepts the offer. This was not set in the scenario, so it was based on the assumption: A-11. (A provisional offer does not reserve a driver until the driver accepts it).
+"Confirmed" (in FR-13) is when a driver accepts the offer. This was not set in the scenario, so it was based on the assumption: A-01, BR-07.
 
 "The receiver" (in FR-09) is the passenger (links to A-05). Whether the referrer also receives updates is unconfirmed. Confirm with coordinator or Kerry Community Link on the policy.
 

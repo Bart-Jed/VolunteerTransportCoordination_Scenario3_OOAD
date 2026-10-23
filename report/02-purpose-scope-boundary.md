@@ -8,16 +8,16 @@ Passengers, volunteer drivers, coordinators, referrers and partner organisations
 
 ### Information Flow
 
-|  ID  | Information                                                                                            | Actor                                                        | Direction     |
-| :--: | ------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------ | ------------- |
-| F-01 | Journey requests and passenger requirements                                                            | Passenger, via coordinator unless direct access is confirmed | Into System   |
-| F-02 | Driver availability and acceptance or rejection of journey offers                                      | Volunteer driver                                             | Into System   |
-| F-03 | Vehicle details and suitability requirements                                                           | Coordinator / volunteer driver                               | Into System   |
-| F-04 | Journey changes and cancellations                                                                      | Coordinator / passenger                                      | Into System   |
-| F-05 | Collection, arrival and return records, or unsuccessful journey details and reasons                    | Volunteer driver                                             | Into System   |
-| F-06 | Journey confirmations and relevant schedule details                                                    | Coordinator / passenger / volunteer driver                   | Out of System |
-| F-07 | Journey offers and required journey details                                                            | Volunteer Driver                                             | Out of System |
-| F-08 | Unallocated requests, provisional offers, driver workload, unmet demand and incomplete journey records | Coordinator                                                  | Out of System |
+|  ID  | Information                                                                                            | Actor                                      | Direction     |
+| :--: | ------------------------------------------------------------------------------------------------------ | ------------------------------------------ | ------------- |
+| F-01 | Journey requests and passenger requirements                                                            | Passenger                                  | Into System   |
+| F-02 | Driver availability and acceptance or rejection of journey offers                                      | Volunteer driver                           | Into System   |
+| F-03 | Vehicle details and suitability requirements                                                           | Coordinator / volunteer driver             | Into System   |
+| F-04 | Journey changes and cancellations                                                                      | Coordinator / passenger                    | Into System   |
+| F-05 | Collection, arrival and return records, or unsuccessful journey details and reasons                    | Volunteer driver                           | Into System   |
+| F-06 | Journey confirmations and relevant schedule details                                                    | Coordinator / passenger / volunteer driver | Out of System |
+| F-07 | Journey offers and required journey details                                                            | Volunteer Driver                           | Out of System |
+| F-08 | Unallocated requests, provisional offers, driver workload, unmet demand and incomplete journey records | Coordinator                                | Out of System |
 ## 3. In Scope
 
 |  ID   | Capability                                                                         |   Problem IDs    | Evidence                                                  |
@@ -36,15 +36,15 @@ Passengers, volunteer drivers, coordinators, referrers and partner organisations
 
 ## 4. Out of scope
 
-| ID    | Item                                                   | Reason                                                                                                          | Evidence                                                                                                                  |
-| ----- | ------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| OS-01 | Emergency Transport                                    | The scenario excludes it.                                                                                       | "The initial scope excludes emergency transport ...". **Changes, completion and follow-up, paragraph 3**                  |
-| OS-02 | Real time Vehicle tracking                             | The scenario excludes it.                                                                                       | "The initial scope excludes emergency transport and vehicle tracking." **Changes, completion and follow-up, paragraph 3** |
-| OS-04 | Eligibility, Membership, contributions and priorities. | Unconfirmed policy                                                                                              | **Journey requests and passenger needs, paragraph 3**                                                                     |
-| OS-05 | Journey Sharing between passengers                     | Unconfirmed policy                                                                                              | **Matching and journey planning, paragraph 1**                                                                            |
-| OS-06 | Performing Driver Checks and Verification              | The system records driver authorisation status and uses it for matching but does not perform the checks itself. | **Volunteer drivers and availability, paragraph 2**                                                                       |
-| OS-07 | Sensitive health details and financial notes           | Access and sharing rules are not confirmed.                                                                     | **Journey requests and passenger needs, paragraph 1**                                                                     |
-| OS-08 | How long the driver waits for a passenger              | A consistent waiting-time policy is not confirmed.                                                              | **Changes, completion and follow-up, paragraph 2**                                                                        |
+| ID    | Item                                                       | Reason                                                                                                                                          | Evidence                                                                                                                  |
+| ----- | ---------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| OS-01 | Emergency Transport                                        | The scenario excludes it.                                                                                                                       | "The initial scope excludes emergency transport ...". **Changes, completion and follow-up, paragraph 3**                  |
+| OS-02 | Real time Vehicle tracking                                 | The scenario excludes it.                                                                                                                       | "The initial scope excludes emergency transport and vehicle tracking." **Changes, completion and follow-up, paragraph 3** |
+| OS-04 | Eligibility, Membership, contributions and priority rules. | Unconfirmed policy. The system records membership status and request priority, but the rules for applying them are deferred (Q-01, Q-11).       | **Journey requests and passenger needs, paragraph 3**                                                                     |
+| OS-05 | Journey Sharing consent rules                              | Unconfirmed policy. The model allows shared journeys (ASC-09), but sharing requires explicit agreement (BR-08, assumed) until Q-02 is answered. | **Matching and journey planning, paragraph 1**                                                                            |
+| OS-06 | Performing Driver Checks and Verification                  | The system records driver authorisation status and uses it for matching but does not perform the checks itself.                                 | **Volunteer drivers and availability, paragraph 2**                                                                       |
+| OS-07 | Sensitive health details and financial notes               | Access and sharing rules are not confirmed.                                                                                                     | **Journey requests and passenger needs, paragraph 1**                                                                     |
+| OS-08 | How long the driver waits for a passenger                  | A consistent waiting-time policy is not confirmed.                                                                                              | **Changes, completion and follow-up, paragraph 2**                                                                        |
 
 ## 5. Dependencies
 

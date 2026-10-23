@@ -30,7 +30,7 @@ This can be worked around by being able to print schedules from the system and t
 
 I decided Passengers and referrers will have direct access to the system as well so that they can check their journey information directly, which also addresses P-02 and P-03.
 
-I decided that I will split up coordinators into their roles because each has a different concern (matching, authorised drivers, offer tracking) and a separate quote. (A-06 in `02-purpose-scope-boundary`)
+I decided that I will split up coordinators into their roles because each has a different concern (matching, authorised drivers, offer tracking) and a separate quote. (A-12 in `02-purpose-scope-boundary`)
 
 
 ## 3. Actors
@@ -60,21 +60,22 @@ Partner Organisations is a supporting actor because the system calls on them whe
 ## 4. Actor–goal catalogue
 _MoSCoW_
 
-| Goal ID | Actor | Goal                                               | Priority hint | Candidate use case | Source / evidence                                                                                          |
-| ------- | ----- | -------------------------------------------------- | ------------- | ------------------ | ---------------------------------------------------------------------------------------------------------- |
-| AG-01   | AP-01 | Assign vehicles and drivers to a journey.          | Must          | UC-04              | Matching and journey planning, paragraph 1, E-09, SC-08                                                    |
-| AG-02   | AP-01 | Review unallocated requests and unmet demand.      | Must          | UC-11              | Changes, completion and follow-up, Volunteer drivers and availability,<br>SC-11, P-07                      |
-| AG-03   | AP-01 | Arrange a replacement driver.                      | Should        | UC-07              | Changes, completion and follow-up, paragraphs 1–2,<br>SC-10, P-01                                          |
-| AG-04   | AP-02 | View current journey schedule.                     | Must          | UC-02              | Changes, completion and follow-up, E-03, SC-06, P-01                                                       |
-| AG-05   | AP-02 | Record a journey outcome.                          | Should        | UC-06              | Changes, completion and follow-up, paragraph 2, O-07                                                       |
-| AG-06   | AP-02 | Respond to journey offer.                          | Must          | UC-05              | Volunteer drivers and availability, paragraph 2, E-08, O-11                                                |
-| AG-07   | AP-02 | Update availability.                               | Should        | UC-10              | Volunteer drivers and availability, paragraph 1                                                            |
-| AG-08   | AP-03 | Request a journey.                                 | Must          | UC-01              | Organisation and current service, paragraph 1, Journey requests and passenger needs, paragraph 1,<br>SC-01 |
-| AG-09   | AP-03 | Check journey confirmation.                        | Should        | UC-03              | Changes, completion and follow-up, P-02, O-02                                                              |
-| AG-10   | AP-04 | Request a journey on a passenger's behalf.         | Must          | UC-01              | Organisation and current service, paragraph 1, Changes, completion and follow-up, E-04,<br>SC-01, P-03     |
-| AG-11   | AP-04 | Check journey confirmation.                        | Should        | UC-03              | Changes, completion and follow-up, E-04, O-03                                                              |
-| AG-12   | AP-05 | Update vehicle information.                        | Should        | UC-08              | Organisation and current service, paragraph 1, E-01, E-02                                                  |
-| AG-13   | AP-06 | Maintain driver authorisation and training status. | Must          | UC-09              | Volunteer drivers and availability, paragraph 2, E-05, P-08, O-08                                          |
+| Goal ID | Actor | Goal                                                | Priority hint | Candidate use case | Source / evidence                                                                                          |
+| ------- | ----- | --------------------------------------------------- | ------------- | ------------------ | ---------------------------------------------------------------------------------------------------------- |
+| AG-01   | AP-01 | Assign vehicles and drivers to a journey.           | Must          | UC-04              | Matching and journey planning, paragraph 1, E-09, SC-08                                                    |
+| AG-02   | AP-01 | Review unallocated requests and unmet demand.       | Must          | UC-11              | Changes, completion and follow-up, Volunteer drivers and availability,<br>SC-11, P-07                      |
+| AG-03   | AP-01 | Arrange a replacement driver.                       | Should        | UC-07              | Changes, completion and follow-up, paragraphs 1–2,<br>SC-10, P-01                                          |
+| AG-04   | AP-02 | View current journey schedule.                      | Must          | UC-02              | Changes, completion and follow-up, E-03, SC-06, P-01                                                       |
+| AG-05   | AP-02 | Record a journey outcome.                           | Should        | UC-06              | Changes, completion and follow-up, paragraph 2, O-07                                                       |
+| AG-06   | AP-02 | Respond to journey offer.                           | Must          | UC-05              | Volunteer drivers and availability, paragraph 2, E-08, O-11                                                |
+| AG-07   | AP-02 | Update availability.                                | Should        | UC-10              | Volunteer drivers and availability, paragraph 1                                                            |
+| AG-08   | AP-03 | Request a journey.                                  | Must          | UC-01              | Organisation and current service, paragraph 1, Journey requests and passenger needs, paragraph 1,<br>SC-01 |
+| AG-09   | AP-03 | Check journey confirmation.                         | Should        | UC-03              | Changes, completion and follow-up, P-02, O-02                                                              |
+| AG-10   | AP-04 | Request a journey on a passenger's behalf.          | Must          | UC-01              | Organisation and current service, paragraph 1, Changes, completion and follow-up, E-04,<br>SC-01, P-03     |
+| AG-11   | AP-04 | Check journey confirmation.                         | Should        | UC-03              | Changes, completion and follow-up, E-04, O-03                                                              |
+| AG-12   | AP-05 | Update vehicle information.                         | Should        | UC-08              | Organisation and current service, paragraph 1, E-01, E-02                                                  |
+| AG-13   | AP-06 | Maintain driver authorisation and training status.  | Must          | UC-09              | Volunteer drivers and availability, paragraph 2, E-05, P-08, O-08                                          |
+| AG-14   | AP-01 | Record journey changes and inform affected drivers. | Must          | UC-12              | Changes, completion and follow-up, paragraph 1, P-01, SC-04                                                |
 
 
 
@@ -87,4 +88,6 @@ _MoSCoW_
 
 
 ## 6. Revision notes
-- Drivers, passengers and referrers moved from supporting to primary actors; UC IDs must be made once Use Cases are made in `04-use-cases`.
+- Drivers, passengers and referrers moved from supporting to primary actors.
+- Candidate use cases filled in once `04-use-cases` was complete; AG-14 added for UC-12.
+- Priority hints were revised when use cases and FRs were finalised; `04-use-cases` holds the final priorities.

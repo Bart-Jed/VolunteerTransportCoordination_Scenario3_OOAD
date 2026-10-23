@@ -1,7 +1,5 @@
- # 04 – Use-Case Model
-
 ## System Boundary
-<!-- One or two lines: what Linker System covers, and what's outside (emergency transport, vehicle tracking) -->
+Linker System covers journey requests, driver and vehicle matching, offers, confirmations, changes and journey outcome records. Emergency transport and real-time vehicle tracking are outside the boundary (OS-01, OS-02).
 
 ## Actors
 
@@ -10,7 +8,7 @@
 | Coordinator                    | Primary              | Assign vehicles and drivers to a journey, review unallocated requests and unmet demand and arrange a replacement driver. | A-02, Q-05, E-09                                                                                                                                         |
 | Volunteer Driver               | Primary / Supporting | View current journey schedule, respond to journey offer, update availability and record journey outcome.                 | E-01, E-03, E-05, C-03, A-13                                                                                                                             |
 | Passenger                      | Primary / Supporting | Request a journey and check journey confirmation.                                                                        | Q-02, E-06                                                                                                                                               |
-| Referrer                       | Primary / Supporting | Request a journey on a passenger's behalf and check journey confirmation.                                                | A-05, Q-02, P-08                                                                                                                                         |
+| Referrer                       | Primary / Supporting | Request a journey on a passenger's behalf and check journey confirmation.                                                | A-05, Q-02, P-03                                                                                                                                         |
 | Accessible-vehicle coordinator | Primary              | Update vehicle information.                                                                                              | A-12, Stakeholder evidence ("The vehicle can be free while no authorised driver is available."), Volunteer drivers and availability                      |
 | Volunteer Coordinator          | Primary              | Maintain driver authorisation, training status and review drivers.                                                       | A-12, P-04, Stakeholder evidence ("We cannot tell whether a driver declined, was unavailable or was never contacted."), Organisation and current service |
 | Partner Organisation           | Supporting           | Occasionally provide accessible vehicles that may be needed for suitable journeys.                                       | Organisation and current service, paragraph 1                                                                                                            |
@@ -39,12 +37,11 @@ Source: `diagrams/use-case-model.puml`
 | UC-06 | Record Journey Outcomes       | Volunteer Driver               | N/A                                    | Record collection, arrival, return times and outcome including a reason if it was unsuccessful so that the coordinator has complete and consistent journey records.                                                                  | FR-07                | Must     |
 | UC-07 | Arrange Replacement Driver    | Coordinator                    | Partner Organisation, Volunteer Driver | When the allocated driver becomes unavailable, allocate a replacement driver who meets the passenger and vehicle requirements.                                                                                                       | FR-11                | Should   |
 | UC-08 | Update Vehicle Information    | Accessible-vehicle Coordinator | N/A                                    | Record which accessible vehicles exist, when they are available and their capabilities so that allocation only proposes vehicles that suit the passenger.                                                                            |                      | Could    |
-| UC-09 | Maintain Driver Authorisation | Volunteer Coordinator          | N/A                                    | Record each driver's completed checks and training and whether they're authorised for accessible vehicles and when their documentation expires, so that allocation only proposes drivers whose checks and documentation are current. |                      | Could    |
+| UC-09 | Maintain Driver Authorisation | Volunteer Coordinator          | N/A                                    | Record each driver's completed checks and training and whether they're authorised for accessible vehicles and when their documentation expires, so that allocation only proposes drivers whose checks and documentation are current. | FR-05                | Must     |
 | UC-10 | Update Availability           | Volunteer Driver               | N/A                                    | Update their usual availability, preferred areas, maximum distance and vehicle limitations which can change weekly, so that allocation only proposes drivers who are actually available.                                             | FR-02                | Must     |
 | UC-11 | Review Unallocated Requests   | Coordinator                    | N/A                                    | Review journey stages, provisional offers, recurring unmet demand and incomplete records, so that the coordinator can see what still needs action and where demand isn't being met.                                                  | FR-12                | Should   |
 | UC-12 | Record Journey Change         | Coordinator                    | Volunteer Driver                       | Record journey changes, then contact affected driver, so that the driver is up to date with their schedule.                                                                                                                          | FR-06                | Must     |
-UC-08, UC-09 and UC-10 set to could as no FR fit the criteria at this time.
-UC-09 assumes authorisation records exist and drivers' maintenance is deferred.
+UC-08 has no FR yet and is marked Could. UC-09 is Must because FR-05 depends on authorisation records being maintained.
 
 ## Detailed Use Case: UC-04 Allocate Driver to Journey
 
@@ -71,10 +68,10 @@ UC-09 assumes authorisation records exist and drivers' maintenance is deferred.
 6. System sets the journey status to provisional.
 
 ### Extensions
-- **3a.** If there is no suitable driver, the coordinator places the passenger on a waiting list or inform the passenger no journey is available. Use case ends.
+- **3a.** No suitable driver is available: the coordinator places the request on the waiting list or informs the passenger that no journey is available (Q-01). Use case ends.
 - **3b.** If there is no suitable vehicle, contact the partner for an accessible vehicle. If one is provided, resume at step 3; otherwise go to 3a.
 - **3c.** A vehicle is available but no authorised driver is available. Coordinator seeks a partner driver or follows 3a.
-- **3d.** The passenger could share a journey with another booking (Q-02)(BR-08). Otherwise coordinator confirms the passenger agrees to share before the journeys are combined (Q-02). If they don't agree, resume at step 4
+- **3d.** The passenger could share with another booking: the coordinator confirms the passenger agrees before the journeys are combined (BR-08, Q-02). If they don’t agree, resume at step 4.
 - **4a.** Coordinator attempts to select a familiar driver whose checks have expired, the system rejects the selection and shows the expired check (BR-03). Resume at step 3.
 - **5a.** Driver doesn't use email/app. Coordinator phones the driver instead and records that the offer was made. Resume at step 6.
 

@@ -1,0 +1,103 @@
+@startuml
+hide methods
+hide circle
+skinparam classAttributeIconSize 0
+
+class Passenger {
+  name
+  contactDetails
+  membershipStatus
+}
+
+class "Journey Request" as journeyRequest {
+  journeyType
+  collectionLocation
+  destination
+  requiredArrivalTime
+  priority
+  companionPermitted
+  expectedReturnTime
+  requestStatus
+  recurring
+}
+
+class "Volunteer Driver" as volunteerDriver {
+  name
+  contactDetails
+  preferredContactMethod
+}
+
+class Vehicle {
+  capacity
+  accessibility
+  limitations
+}
+
+class Journey {
+  date
+  collectionTime
+  arrivalTime
+  status
+  outcome
+  unsuccessfulReason
+}
+
+class "Driver Check" as driverCheck {
+  expiryDate
+  checkType
+  completedDate
+}
+
+class Partner {
+  name
+}
+
+class Offer {
+  date
+  status
+}
+
+class Referrer {
+  name
+  contactDetails
+  relationship
+  receiveUpdates
+}
+
+class Coordinator {
+  name
+}
+
+class "Passenger Need" as passengerNeed {
+  needType
+  details
+}
+
+class "Driver Availability" as driverAvailability {
+  preferredArea
+  maxDistance
+  days
+  times
+}
+
+Passenger "1" -- "0..*" journeyRequest : requests >
+Passenger "1" -- "0..*" passengerNeed : requires >
+
+volunteerDriver "1" -- "0..*" Offer : receives >
+volunteerDriver "1" -- "0..*" driverCheck : has completed >
+volunteerDriver "1" -- "0..*" driverAvailability : provides >
+volunteerDriver "0..1" -- "0..*" Journey : drives >
+volunteerDriver "0..1" -- "0..*" Vehicle : owns >
+
+Coordinator "1" -- "0..*" Offer : sends >
+
+Referrer "0..1" -- "0..*" journeyRequest : requests >
+
+Partner "0..1" -- "0..*" Vehicle : provides >
+
+Journey "0..*" -- "1..*" Passenger : carries >
+Journey "0..*" -- "0..1" Vehicle : uses >
+Journey "1" -- "0..*" Offer : offered via >
+
+journeyRequest "1" -- "0..*" Journey : produces >
+@enduml

@@ -1,7 +1,7 @@
 # 06 – Domain Model and Rationale
 
 ## Purpose
-The purpose of this file is to decide on what will be included in the domain model of what the Linker System must hold, create the domain model without without methods and IDs. 
+This file models the information Linker System must hold, as a conceptual domain model with no methods, IDs or navigability.
 
 ## Domain Model Diagram
 
@@ -13,7 +13,7 @@ Source: `diagrams/domain-model.puml`
 
 | Class               | Key attributes                                                                                                                                  | From candidates                          |
 | ------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------- |
-| Journey             | `date, collectionTime, <br>arrivalTime, status, outcome, unsuccessfulReason`                                                                    | CC-21, CC-26, CC-29, CC-30, CC-31        |
+| Journey             | `date, collectionTime, arrivalTime, status, outcome, unsuccessfulReason`                                                                        | CC-21, CC-26, CC-29, CC-30, CC-31        |
 | Journey Request     | `journeyType, collectionLocation, destination, requiredArrivalTime, priority, companionPermitted, expectedReturnTime, requestStatus, recurring` | CC-12, CC-13, CC-14, CC-11, CC-27, CC-35 |
 | Volunteer Driver    | `name, contactDetails, preferredContactMethod`                                                                                                  | CC-06, CC-07, CC-32                      |
 | Driver Check        | `expiryDate, checkType, completedDate`                                                                                                          | CC-22, CC-23                             |
@@ -55,6 +55,6 @@ Source: `diagrams/domain-model.puml`
 ## Assumptions and Open Questions
 - A driver may be recorded before their checks are complete. The scenario doesn't say whether that is allowed (ASC-04).
 - A request has at most one referrer. The scenario doesn't rule out a relative and a community worker both being involved (ASC-07).
-- ASC-09 assumes journey sharing is permitted. Up to this point, it was stated as a 'unconfirmed policy'.
-- When I was fixing ASC-02, I assumed Passenger Need was one record per person and not a shared type.
+- Shared journeys are allowed only with the passenger’s explicit agreement (BR-08). Whether consent is general or per journey is unresolved (Q-02) (ASC-09).
+- Passenger Need is one record per passenger, not a shared type (ASC-02).
 - I left out Contribution Management as it was unclarified on what the policy stated for it (Q-11). 
