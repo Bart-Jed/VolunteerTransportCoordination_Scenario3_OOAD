@@ -62,19 +62,19 @@ _MoSCoW_
 
 | Goal ID | Actor | Goal                                               | Priority hint | Candidate use case | Source / evidence                                                                                          |
 | ------- | ----- | -------------------------------------------------- | ------------- | ------------------ | ---------------------------------------------------------------------------------------------------------- |
-| AG-01   | AP-01 | Assign vehicles and drivers to a journey.          | Must          | UC-0x              | Matching and journey planning, paragraph 1, E-09, SC-08                                                    |
-| AG-02   | AP-01 | Review unallocated requests and unmet demand.      | Must          | UC-0x              | Changes, completion and follow-up, Volunteer drivers and availability,<br>SC-11, P-07                      |
-| AG-03   | AP-01 | Arrange a replacement driver.                      | Should        | UC-0x              | Changes, completion and follow-up, paragraphs 1–2,<br>SC-10, P-01                                          |
-| AG-04   | AP-02 | View current journey schedule.                     | Must          | UC-0x              | Changes, completion and follow-up, E-03, SC-06, P-01                                                       |
-| AG-05   | AP-02 | Record a journey outcome.                          | Should        | UC-0x              | Changes, completion and follow-up, paragraph 2, O-07                                                       |
-| AG-06   | AP-02 | Respond to journey offer.                          | Must          | UC-0x              | Volunteer drivers and availability, paragraph 2, E-08, O-11                                                |
-| AG-07   | AP-02 | Update availability.                               | Should        | UC-0x              | Volunteer drivers and availability, paragraph 1                                                            |
-| AG-08   | AP-03 | Request a journey.                                 | Must          | UC-0x              | Organisation and current service, paragraph 1, Journey requests and passenger needs, paragraph 1,<br>SC-01 |
-| AG-09   | AP-03 | Check journey confirmation.                        | Should        | UC-0x              | Changes, completion and follow-up, P-02, O-02                                                              |
-| AG-10   | AP-04 | Request a journey on a passenger's behalf.         | Must          | UC-0x              | Organisation and current service, paragraph 1, Changes, completion and follow-up, E-04,<br>SC-01, P-03     |
-| AG-11   | AP-04 | Check journey confirmation.                        | Should        | UC-0x              | Changes, completion and follow-up, E-04, O-03                                                              |
-| AG-12   | AP-05 | Update vehicle information.                        | Should        | UC-0x              | Organisation and current service, paragraph 1, E-01, E-02                                                  |
-| AG-13   | AP-06 | Maintain driver authorisation and training status. | Must          | UC-0x              | Volunteer drivers and availability, paragraph 2, E-05, P-08, O-08                                          |
+| AG-01   | AP-01 | Assign vehicles and drivers to a journey.          | Must          | UC-04              | Matching and journey planning, paragraph 1, E-09, SC-08                                                    |
+| AG-02   | AP-01 | Review unallocated requests and unmet demand.      | Must          | UC-11              | Changes, completion and follow-up, Volunteer drivers and availability,<br>SC-11, P-07                      |
+| AG-03   | AP-01 | Arrange a replacement driver.                      | Should        | UC-07              | Changes, completion and follow-up, paragraphs 1–2,<br>SC-10, P-01                                          |
+| AG-04   | AP-02 | View current journey schedule.                     | Must          | UC-02              | Changes, completion and follow-up, E-03, SC-06, P-01                                                       |
+| AG-05   | AP-02 | Record a journey outcome.                          | Should        | UC-06              | Changes, completion and follow-up, paragraph 2, O-07                                                       |
+| AG-06   | AP-02 | Respond to journey offer.                          | Must          | UC-05              | Volunteer drivers and availability, paragraph 2, E-08, O-11                                                |
+| AG-07   | AP-02 | Update availability.                               | Should        | UC-10              | Volunteer drivers and availability, paragraph 1                                                            |
+| AG-08   | AP-03 | Request a journey.                                 | Must          | UC-01              | Organisation and current service, paragraph 1, Journey requests and passenger needs, paragraph 1,<br>SC-01 |
+| AG-09   | AP-03 | Check journey confirmation.                        | Should        | UC-03              | Changes, completion and follow-up, P-02, O-02                                                              |
+| AG-10   | AP-04 | Request a journey on a passenger's behalf.         | Must          | UC-01              | Organisation and current service, paragraph 1, Changes, completion and follow-up, E-04,<br>SC-01, P-03     |
+| AG-11   | AP-04 | Check journey confirmation.                        | Should        | UC-03              | Changes, completion and follow-up, E-04, O-03                                                              |
+| AG-12   | AP-05 | Update vehicle information.                        | Should        | UC-08              | Organisation and current service, paragraph 1, E-01, E-02                                                  |
+| AG-13   | AP-06 | Maintain driver authorisation and training status. | Must          | UC-09              | Volunteer drivers and availability, paragraph 2, E-05, P-08, O-08                                          |
 
 
 

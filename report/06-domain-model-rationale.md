@@ -31,19 +31,19 @@ Source: `diagrams/domain-model.puml`
 | ID     | Class A          | Association   | Class B             | Multiplicity (A–B) | Evidence / assumption                                                         |
 | ------ | ---------------- | ------------- | ------------------- | ------------------ | ----------------------------------------------------------------------------- |
 | ASC-01 | Passenger        | Requests      | Journey Request     | `1 – 0..*`         | A passenger may request a one-way journey, return journey or recurring series |
-| ASC-02 | Passenger        | Requires      | Passenger Need      | `1 - 0..*`         |                                                                               |
-| ASC-03 | Volunteer Driver | Receives      | Offer               | `1 - 0..*`         |                                                                               |
-| ASC-04 | Volunteer Driver | Has Completed | Driver Check        | `1 - 0..*`         |                                                                               |
-| ASC-05 | Coordinator      | Sends         | Offer               | `1 - 0..*`         |                                                                               |
-| ASC-06 | Volunteer Driver | Provides      | Driver Availability | `1 - 0..*`         |                                                                               |
-| ASC-07 | Referrer         | Requests      | Journey Request     | `0..1 - 0..*`      |                                                                               |
-| ASC-08 | Journey Request  | Produces      | Journey             | `1 - 0..*`         |                                                                               |
-| ASC-09 | Journey          | Carries       | Passenger           | `0..* - 1..*`      |                                                                               |
-| ASC-10 | Volunteer Driver | Drives        | Journey             | `0..* - 0..1`      |                                                                               |
-| ASC-11 | Journey          | Uses          | Vehicle             | `0..* - 0..1`      |                                                                               |
-| ASC-12 | Journey          | Offered via   | Offer               | `1 - 0..*`         |                                                                               |
-| ASC-13 | Volunteer Driver | Owns          | Vehicle             | `0..1 - 0..*`      |                                                                               |
-| ASC-14 | Partner          | Provides      | Vehicle             | `0..1 - 0..*`      |                                                                               |
+| ASC-02 | Passenger        | Requires      | Passenger Need      | `1 - 0..*`         | Passengers may need wheelchair space, room for a walking aid ...              |
+| ASC-03 | Volunteer Driver | Receives      | Offer               | `1 - 0..*`         | A driver may be offered several compatible journeys                           |
+| ASC-04 | Volunteer Driver | Has Completed | Driver Check        | `1 - 0..*`         | Drivers have completed different checks and training                          |
+| ASC-05 | Coordinator      | Sends         | Offer               | `1 - 0..*`         | Volunteer coordinator: can't tell if a driver was “never contacted            |
+| ASC-06 | Volunteer Driver | Provides      | Driver Availability | `1 - 0..*`         | Volunteer drivers provide usual availability… may change weekly               |
+| ASC-07 | Referrer         | Requests      | Journey Request     | `0..1 - 0..*`      | Requests are sometimes submitted by relatives or community workers            |
+| ASC-08 | Journey Request  | Produces      | Journey             | `1 - 0..*`         | one-way journey, return journey or recurring series                           |
+| ASC-09 | Journey          | Carries       | Passenger           | `0..* - 1..*`      | Passengers travelling to nearby destinations may share a journey              |
+| ASC-10 | Volunteer Driver | Drives        | Journey             | `0..1 - 0..*`      | Volunteer drivers use their own cars                                          |
+| ASC-11 | Journey          | Uses          | Vehicle             | `0..* - 0..1`      | Coordinators consider ... vehicle suitability                                 |
+| ASC-12 | Journey          | Offered via   | Offer               | `1 - 0..*`         | repeated unsuccessful offers, provisional offers are recorded inconsistently  |
+| ASC-13 | Volunteer Driver | Owns          | Vehicle             | `0..1 - 0..*`      | Volunteer drivers use their own cars                                          |
+| ASC-14 | Partner          | Provides      | Vehicle             | `0..1 - 0..*`      | partner organisations occasionally provide accessible vehicles                |
 
 ## Modelling Rationale
 - I decided that the Journey Request can have a 1 to none or many relationship with the Journey because a request can exist before any journey is arranged (CC-27), and the type of the journey can dictate how many actual journeys will take place (return = 2, recurring makes a journey each time it repeats). 
